@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wealth Dimension</title>
+  <!-- Start of CSS Links -->
+  <link rel="stylesheet" href="pages/home/css/general.css">
+  <link rel="stylesheet" href="pages/home/css/navbar.css">
+  <link rel="stylesheet" href="pages/home/css/searchbar.css">
+  <link rel="stylesheet" href="pages/home/css/banner.css">
+  <link rel="stylesheet" href="pages/home/css/jobs.css">
+  <link rel="stylesheet" href="pages/home/css/wdc_intro.css">
+  <link rel="stylesheet" href="pages/home/css/image_slider.css">
+  <link rel="stylesheet" href="pages/home/css/wdcIG.css">
+  <link rel="stylesheet" href="pages/home/css/footer.css">
+  <!-- Start of Font Style -->
+  <!-- End of Font Style -->
+  <!-- End of CSS Links -->
+  <!-- Start of script -->
+  <!-- End of script -->
+</head>
+<body onresize="width_changed()">
+  <header>
+    <!-- Start of navbar -->
+    <nav>
+      <div class="outer-navbar">
+        <div class="navbar">
+          <div class = "company-icon">
+            <a href="#"><img src="pages/home/images/wdc_icon_full_name.png"></a>
+          </div>
+          <ul class="links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="pages/aboutUs/aboutUs.html">About Us</a></li>
+            <li><a href="#">Hot Jobs</a></li>
+            <li><a href="#">Recruiter</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="language-container"><div class="language"><img src="pages/home/images/language-img.png"><span>En</span></div></div>
+          <div class="menu">
+            <button class="menu-options" onclick=menuArrowRotation()>
+              Home
+              <img id="menu-arrow" src="pages/home/images/downward-arrow.png">
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="menu-container" id="dropdown-menu">
+        <div class="list-container">
+          <ul class="menu-links">
+            <div class="active"><li><a href="#">Home</a></li></div>
+            <div><li><a href="pages/aboutUs/aboutUs.html">About Us</a></li></div>
+            <div><li><a>Hot Jobs</a></li></div>
+            <div><li><a>Recruiter</a></li></div>
+            <div><li><a>Contact</a></li></div>
+          </ul>
+          <div class="language-container"><div class="language"><img src="pages/home/images/language-img.png"><span>En</span></div></div>
+        </div>
+      </div>
+    </nav>
+    <!-- End of navbar -->
+    <!-- Start of search bar -->
+    <div class="searchbar-container">
+      <div class="searchbar">
+        <input class="serach" type="search" placeholder="Search">
+        <button class="more-options" onclick=searchArrowRotation()>
+          More options
+          <img id="search-arrow" src="pages/home/images/downward-arrow.png">
+        </button>
+        <button class="search-btn">
+          <img src="pages/home/images/search-icon.png">
+        </button>
+      </div>
+      <!--
+      <div class="sort-options">
+        <input class="sorting-btn" type="text" placeholder="Enter Keywords"></input>
+        <select class="sorting-btn">
+          <option>Location</option>
+          <option>Tsing Yi</option>
+          <option>Yuen Long</option>
+          <option>Wan Chai</option>
+        </select>
+        <select class="sorting-btn">
+          <option>Classification</option>
+          <option>Bank</option>
+          <option>Taxi driver</option>
+          <option>Fund manager</option>
+        </select>
+      </div>
+      -->
+    </div>
+    <!-- End of search bar -->
+    <!-- Start of advertisement banner -->
+    <div class="banner-container">
+      <div class="banner">
+        <img src="pages/home/images/banner_1.png">
+      </div>
+    </div>
+    <!-- End of advertisement banner -->
+  </header>
+  <script src="pages/home/javascripts/styling.js"></script>
+  <!-- Start of job list -->
+  <section class="job-section-container" id="job_section_container">
+    <div class="job_sorting_results">
+      <div class="sort_details">
+        <h3>Top 10 Hot Jobs</h3>
+      </div>
+      <div class="scroll-btns">
+        <button id="move_left"><img id="move_left_img" src="pages/home/images/move-left-arrow.png"></button>
+        <button id="move_right"><img src="pages/home/images/move-right-arrow.png"></button>
+      </div>
+    </div>
+    <div class="job-section" id="job_section">
+      <div id="job-scroll">
+        <!-- Start of job items -->
+        <!--
+        <div class="job-container">
+          <div class="job-heading">
+            <h3>A leading Chinese bank<br> 
+              is recruiting</h3>
+            <button><img src="pages/home/images/question.png"></button>
+          </div>
+          <div class="job-title">
+            <h4>Relationship Manager - Corporate Banking<br>(WDCO - CBRM)</h4>
+          </div>
+          <div class="job-desc-container">
+            <div class="job-desc">
+              <span>Salary: <span>~20-50k HKD</span></span>
+              <span>Location: <span>Tsing Yi</span></span><br>
+              <span class="date-of-post">Posted on<span>2024-3-30</span></span>
+            </div>
+            <div class="detail-btns">
+              <button class="detail">Details</button>
+              <button class="share"><img src="pages/home/images/share-btn.png"></button>
+            </div>
+          </div>
+        </div>
+        -->
+        <!-- Start of job items -->
+      </div>
+    </div>
+  </section>
+  <div class="expand-downwards">
+    <button id="expand-btn" onclick="expand_job_list()"><img src="pages/home/images/expand-arrow.png"></button>
+  </div>
+  <script src="pages/home/javascripts/script.js"></script>
+  <!-- End of job list -->
+  <section>
+    <div class="wdc-intro-container">
+      <div class="wdc-intro">
+        <h2>Wealth Dimensions<br>Consultancy Limited</h2>
+        <p>is a professional recruitment firm specialized in placing<br>managerial and functional talents for Banking, Insurance,<br>Financial Services and Information Technology industry.</p>
+        <button>Contact Us</button>
+      </div>
+      <div id="imageSliderContainer">
+        <div class="imageSlider">
+          <div class="slides">
+            <!-- radio buttons start-->
+            <input type="radio" name="radio_btn" id="radio1">
+            <input type="radio" name="radio_btn" id="radio2">
+            <input type="radio" name="radio_btn" id="radio3">
+            <input type="radio" name="radio_btn" id="radio4">
+            <input type="radio" name="radio_btn" id="radio5">
+            <!-- radio buttons end-->
+            <!-- slide images start-->
+            <div class="slide first">
+              <img src="pages/home/images/slider_images/1.png" alt="">
+            </div>
+            <div class="slide">
+              <img src="pages/home/images/slider_images/2.png" alt="">
+            </div>
+            <div class="slide">
+              <img src="pages/home/images/slider_images/3.png" alt="">
+            </div>
+            <div class="slide">
+              <img src="pages/home/images/slider_images/4.png" alt="">
+            </div>
+            <div class="slide">
+              <img src="pages/home/images/slider_images/5.png" alt="">
+            </div>
+            <!-- slide images end-->
+            <!-- automatic navigation start-->
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+              <div class="auto-btn5"></div>
+            </div>
+            <!-- automatic navigation end-->
+          </div>
+          <!-- manual navigation start-->
+          <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+          </div>
+          <!-- manual navigation end-->
+        </div>
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+              document.getElementById('radio' + counter).checked = true;
+              counter++;
+              if (counter > 5){
+                counter = 1;
+              }
+            }, 8000)        
+      
+            // Add event listeners for navigation buttons
+            const navButtons = document.querySelectorAll('.manual-btn');
+            navButtons.forEach((button, index) => {
+              button.addEventListener('click', () => {
+                // Update the slide index based on the clicked button
+                counter = index + 1;
+                document.getElementById('radio' + counter).checked = true;
+          });
+        });
+        </script>
+      </div>
+    </div>
+  </section>
+  <!-- Start of the IG Widget-->
+  <!-- End of the IG Widget-->
+  <footer>
+    <div class="footer-container">
+      <h4>Wealth Dimensions Consultancy Limited</h4>
+      <p><a href="info@wdco.com.hk">info@wdco.com.hk</a><br>+852 3571 9903</p>
+      <div class="socialMedai-links">
+        <a href="https://www.instagram.com/tomlee_wdco/"><img src="pages/home/images/instagramIcon.png"></a>
+        <a href="https://www.facebook.com/wdchk"><img src="pages/home/images/faceBookIcon.png"></a>
+        <a href="https://www.linkedin.com/company/wealth-dimensions-consultancy-limited/posts/?feedView=all"><img src="pages/home/images/LinkedInIcon.png"></a>
+      </div>
+      <p>Employment Agency Licence Number : 72014<br>Labour Department Employment Agency : <a href="www.eaa.labour.gov.hk">www.eaa.labour.gov.hk</a><br><br>©2015-2024 by Wealth Dimensions Consultancy Limited.</p><br>
+      <div class="policies">
+        <p>Terms and Conditions</p>
+        <p>Privacy Policy</p>
+      </div>
+    </div>
+  </footer>
+  <script src="pages/jobs.js"></script>
+</body>
+</html>
